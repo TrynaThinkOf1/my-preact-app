@@ -85,10 +85,10 @@ export function Home() {
   function bringUpAddThisModal(opinion) {
     if (loadedScreed.indexOf(opinion) >= 0) {
       var Buttons = () => (<div>
-        <button id="confirmBtn" onClick={() => setShowModal(false)}>Oops sorry</button></div>);
+        <button id="confirmBtn" onClick={() => setShowModal(false)}>Ok</button></div>);
 
       setModalData({
-        title : "You already have this opinion in your screed!",
+        title : "You already have this opinion in your screed",
         children : <div><div>{opinion}</div><br/><Buttons /></div>
       });
     } else {
