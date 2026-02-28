@@ -191,7 +191,7 @@ export function Home() {
 
   // this function does NOT allow overlapping
   // for example ("foofoofoo", "foofoo") -> 1 | ("bararbarar", "arar") -> 2
-  function substrOccurences(str, substr) {
+  function substrOccurrences(str, substr) {
     str += "";
     substr += "";
     if (substr.length <= 0) return 0;
@@ -218,7 +218,7 @@ export function Home() {
       var mindex = i;
 
       for (var j = i + 1; j < copy.length; j++) {
-        if (substrOccurences(copy[j].opinion, search) < substrOccurences(copy[mindex].opinion, search)) {
+        if (substrOccurrences(copy[j].opinion, search) < substrOccurrences(copy[mindex].opinion, search)) {
           mindex = j;
         }
       }
